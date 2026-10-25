@@ -19,6 +19,8 @@ Open **About hnly → Software updates**. On Mac, **hnly → Check for Updates�
 
 Copies predating application updates need one manual installation of a current installer. Downloading the `.app.tar.gz` file is not the normal Mac installation flow; it is consumed by the updater.
 
+Mac releases from 0.1.7 use a fixed Apple Development application identity to retain Keychain access across updates. When moving from an older release, macOS may still ask you to authorize existing login records individually. Enter the login Keychain password yourself and choose Always Allow if you trust this installed copy. This does not grant Apple notarization or remove first-install system trust prompts.
+
 ## Verification and privacy
 
 The application verifies update packages against an embedded release key and checks the signed version before installation. Update signatures are separate from Apple / Microsoft publisher approval. Public verification keys and third-party notices are provided with releases. Checks and downloads contact GitHub; they do not send HN or ChatGPT credentials. Privacy and service terms are available inside the application.
